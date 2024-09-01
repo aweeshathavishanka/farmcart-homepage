@@ -3,13 +3,10 @@ import NewsBar from "./NewsBar";
 import { MdOutlineLogout } from "react-icons/md";
 
 const Header = () => {
-  // State to track whether the user is logged in
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
-  // Mock function to handle logout (you would replace this with actual logic)
   const handleLogout = () => {
     setIsLoggedIn(true);
-    // Additional logout logic like clearing tokens, etc.
   };
 
   return (
@@ -32,7 +29,6 @@ const Header = () => {
             </span>
           </div>
 
-          {/* Conditionally render based on authentication state */}
           {isLoggedIn ? (
             <div className="flex items-center gap-4 text-sm">
               <button
@@ -54,8 +50,7 @@ const Header = () => {
               </button>
               <button
                 className="py-3 bg-[#99DD05] rounded-lg px-7 hover:bg-[#99DD05]/60"
-                onClick={() => setIsLoggedIn(true)} // Mock login logic
-              >
+                onClick={() => setIsLoggedIn(true)}>
                 Login
               </button>
             </div>

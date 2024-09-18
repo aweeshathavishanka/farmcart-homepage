@@ -6,7 +6,7 @@ import { FaMedium } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="mx-auto  max-w-7xl pb-5 px-10  rounded-xl bg-[#04530D] ">
+    <div className="mx-auto  max-w-7xl pb-5 px-10 mb-10  rounded-xl bg-[#04530D] ">
       <hr className="my-4 " />
       <div className="grid grid-cols-2 pt-10 pb-8 md:grid-cols-4">
         <div>
